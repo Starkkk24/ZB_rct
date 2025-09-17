@@ -2,7 +2,7 @@
 export default function Home(){
     return(
         <>
-        <div class="relative  flex items-center justify-center min-h-[calc(100vh-60px)] px-8 py-16 z-20 ">
+        <div class="relative  flex items-center justify-center min-h-[calc(100vh-60px)] p-30 z-20 m-10">
             <div class="text-center relative m-0 z-2">
                 <h1 class="text-7xl mb-4 font-bold">Welcome to <span class="text-[#8fff00]">The Zigbee Club</span></h1>
                 <p class="text-3xl my-8">Lets connect and Create...</p>

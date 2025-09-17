@@ -4,7 +4,7 @@ import {Outlet,Link} from 'react-router-dom'
 function NavBar() {
         return(
         <>
-        <nav class="flex flex-row  justify-between bg-[rgba(13,17,23,0.95)] px-16">
+        <nav class="fixed top-0 left-0 w-full z-50 flex flex-row justify-between bg-[rgba(13,17,23,0.95)] px-16">
             <div className="nav-left" class="flex flex-row items-center" >
                 <div className="logo"><img src={logo} alt='logo' class="size-17"></img></div>
                 <div className="head" ><h1 class="text-3xl font-semibold text-[#8fff00]">Zigbee</h1></div>

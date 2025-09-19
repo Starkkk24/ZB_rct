@@ -11,7 +11,7 @@ function EventCard({date, location, name, img, about}){
                     <p><i class="fa-solid fa-location-dot"></i> {location}</p>
                     {/* <button>Hop In</button> */}
                     {/* <hr/> */}
-                    <p>{about}</p>
+                    {/* <p>{about}</p> */}
                     {/* <hr/> */}
                     </div>
                 <div>

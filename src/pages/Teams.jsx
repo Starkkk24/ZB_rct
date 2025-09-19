@@ -219,7 +219,7 @@ export default function Teams(){
                 </div>
             </div>
 
-            <div class="flex flex-col mx-55">
+            <div class="flex items-center flex-col mx-25">
                 <div class="flex gap-2 text-[#8ff000] font-bold text-3xl mb-10 ">
                     <i class="fas fa-users-cog"></i>
                     <h3>Core Members</h3>                    

@@ -1,4 +1,6 @@
 import pic from '../static/img/image.png'
+import {Link} from 'react-router-dom'
+
 
 function EventCard({date, location, name, img, about}){
     return(
@@ -28,7 +30,7 @@ function EventCard({date, location, name, img, about}){
                    Share  <i class="fa-solid fa-arrow-up-from-bracket"></i>
                 </div>                
                 <div class="text-xl">
-                    View <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    <Link to="/event1">View <i class="fa-solid fa-arrow-up-right-from-square"></i></Link>
                 </div>                
             </div>
         </div>

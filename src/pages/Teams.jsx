@@ -195,6 +195,7 @@ export default function Teams(){
             </div>
         </div>
 
+        {/* <div class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md m-25 mt-0" > */}
         <div className="Wrap">
             <div class="flex items-center flex-col mx-25">
                 <div class="flex gap-2 text-[#8ff000] font-bold text-3xl mb-10 ">
@@ -234,6 +235,7 @@ export default function Teams(){
             </div>
 
         </div>
+        {/* </div> */}
         </>
     )
 }

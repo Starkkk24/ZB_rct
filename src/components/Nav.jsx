@@ -1,41 +1,36 @@
 import logo from '../static/img/zgb.png'
-import {Outlet,Link} from 'react-router-dom'
+import {Outlet,Link, useLocation} from 'react-router-dom'
+import { useState } from 'react';
 
 function NavBar() {
+  const location = useLocation();
+  const active = location.pathname;
+
         return(
         <>
         <nav class="fixed top-0 left-0 w-full z-50 flex flex-row justify-between pt-3 px-8 bg-[#000000dc] ">
-        {/* <nav class="fixed top-0 left-0 w-full z-50 flex flex-row justify-between px-8 bg-[#0a0a0a60] border-b border-b-[rgba(255,255,255,0.1)]"> */}
-        {/* <div class="flex gap-20"> */}
             <a href='/'>
             <div className="nav-left" class="flex flex-row items-center" >
                 <div className="logo"><img src={logo} alt='logo' class="size-19"></img></div>
                 <div className="head" ><h1 class="text-4xl font-semibold text-[#8fff00]">Zigbee</h1></div>
             </div>
             </a>
-            <div className="nav-middle" class="flex flex-row items-center gap-8 bg-[rgba(33,36,39,0.7)] border-0 rounded-3xl px-6 py-4 m-4">
+            <div className="nav-middle" class="flex flex-row items-center gap-8 bg-[rgba(33,36,39,0.7)]   backdrop-blur-md border-0 rounded-3xl px-6 py-4 m-4">
                 <div className="nav-links" >
                     <ul class="flex flex-row gap-12 px-4 justify-center">
-                        <li><a href="/" class="text-[rgba(255,255,255,0.8)]">Home</a></li>
-                        <li><a href="/about"  class="text-[rgba(255,255,255,0.8)]">About</a></li>
-                        <li><a href="/team"  class="text-[rgba(255,255,255,0.8)]">Team</a></li>
-                        <li><a href="/event"  class="text-[rgba(255,255,255,0.8)]">Events</a></li>
-                        <li><a href="#"  class="text-[rgba(255,255,255,0.8)]">Blogs</a></li>
-                        {/* <li><a href="#"  class="text-[rgba(255,255,255,0.8)]">Blog</a></li> */}
-                        {/* <li><a href="#"  class="text-[rgba(255,255,255,0.8)]">Contact</a></li> */}
-                        {/* <li><a href="#"  class="text-[rgba(255,255,255,0.8)]">Feedback</a></li> */}
+                        <li><Link to="/"  className={`transition-colors ${active === "/" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Home</Link></li>
+                        <li><Link to="/about"   className={`transition-colors ${active === "/about" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>About</Link></li>
+                        <li><Link to="/team"   className={`transition-colors ${active === "/team" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Team</Link></li>
+                        <li><Link to="/tp"   className={`transition-colors ${active === "/tp" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Team2</Link></li>
+                        <li><Link to="/event"  className={`transition-colors ${active === "/event" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Events</Link></li>
+                        <li><Link to="/blogs"  className={`transition-colors ${active === "/blogs" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Blogs</Link></li>
                     </ul>
                 </div>
-                {/* <div className="nav-signin">
-                    <div classameN="account-dropdown">
-                        <button className="account-btn" class="text-[#8fff00] border-[#8fff00]">Account </button>
-                    </div>
-                </div> */}
             </div>
         {/* </div> */}
-        <div className='nav-right' class="flex flex-row items-center gap-8 bg-[rgba(33,36,39,0.7)] border-0 rounded-3xl px-6 py-4 m-4">
+        <div className='nav-right' class="flex flex-row items-center gap-8 bg-[rgba(33,36,39,0.7)]  backdrop-blur-md border-0 rounded-3xl px-6 py-4 m-4">
                 <ul class="flex flex-row gap-12 px-4 justify-center">
-                    <li><a href="#"  class="text-[rgba(255,255,255,0.8)]">Contact</a></li>
+                    <li><Link to="/contact"  className={`transition-colors ${active === "/contact" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Contact</Link></li>
                 </ul>
         </div>
         </nav>

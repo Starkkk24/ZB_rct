@@ -7,6 +7,9 @@ import About from "./pages/About";
 import Teams from "./pages/Teams";
 import Events from "./pages/Events";
 import Teamss from "./pages/test";
+import EventPage from "./pages/EventPage";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
 
 export default function App() {
   return (
@@ -20,6 +23,9 @@ export default function App() {
             <Route path="/tp" element={<Teamss/>}/>
             <Route path="/team" element={<Teams/>}/>
             <Route path="/event" element={<Events/>}/>
+            <Route path="/event1" element={<EventPage/>}/>
+            <Route path="/blogs" element={<Blogs/>}/>
+            <Route path="/contact" element={<Contact/>}/>
           </Route>
         </Routes>
       </div>

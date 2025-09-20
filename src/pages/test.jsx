@@ -230,6 +230,7 @@ const variants = {
           Core Members
         </button>
       </div>
+        <div class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md m-25 mt-0" >
 
         <div className="Wrap">
             <AnimatePresence mode="wait">
@@ -241,7 +242,7 @@ const variants = {
       exit="exit"
       variants={variants}
       transition={{ duration: 0.6, ease: "easeInOut" }}
-      className="flex items-center flex-col mx-25"
+      className="flex items-center flex-col mx-10"
     >
             <div class="flex items-center flex-col mx-0">
                 <div class="flex gap-2 text-[#8ff000] font-bold text-3xl mb-10 ">
@@ -279,7 +280,7 @@ const variants = {
       exit="exit"
       variants={variants}
       transition={{ duration: 0.6, ease: "easeInOut" }}
-      className="flex items-center flex-col mx-25"
+      className="flex items-center flex-col mx-10"
     >
             <div class="flex items-center flex-col mx-2">
                 <div class="flex gap-2 text-[#8ff000] font-bold text-3xl mb-10 ">
@@ -299,6 +300,7 @@ const variants = {
             )}
             </AnimatePresence>
             
+        </div>
         </div>
         </>
     )

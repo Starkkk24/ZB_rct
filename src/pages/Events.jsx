@@ -48,16 +48,30 @@ export default function Events() {
         </div>
 
         <div className="tabs" class="flex justify-center text-2xl gap-7  p-0 z-20">
-            <div className="tabs_button" class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px] border border-[#8fff00] p-4 text-[#8fff00] ">
+            <div className="tabs_button" class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px] border border-[#8fff00] p-4 text-[#8fff00] 
+             transition-all 
+             duration-300 
+             hover:bg-[#8fff00] 
+             hover:text-black 
+             hover:scale-105 cursor-cell ">
                 Past Events
             </div>
-            <div className="tabs_button" class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px] border border-[#8fff00] p-4 text-[#8fff00]">
+            <div className="tabs_button" class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px] border border-[#8fff00] p-4 text-[#8fff00] 
+             transition-all 
+             duration-300 
+             hover:bg-[#8fff00] 
+             hover:text-black 
+             hover:scale-105 cursor-cell">
                 Current Events
             </div>
-            <div className="tabs_button" class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px] border border-[#8fff00] p-4 text-[#8fff00]">
+            <div className="tabs_button" class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px] border border-[#8fff00] p-4 text-[#8fff00] 
+             transition-all 
+             duration-300 
+             hover:bg-[#8fff00] 
+             hover:text-black 
+             hover:scale-105 cursor-cell">
                 Upcoming Events
             </div>
-
         </div>
         
         <div class="  flex items-center justify-center text-5xl gap-4  pt-20 z-20">

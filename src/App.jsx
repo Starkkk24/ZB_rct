@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Teams from "./pages/Teams";
 import Events from "./pages/Events";
+import Teamss from "./pages/test";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/" element={<Nav />}>
             <Route index element={<Home />}/>
             <Route path="/about" element={<About/>}/>
+            <Route path="/tp" element={<Teamss/>}/>
             <Route path="/team" element={<Teams/>}/>
             <Route path="/event" element={<Events/>}/>
           </Route>

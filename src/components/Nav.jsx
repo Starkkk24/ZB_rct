@@ -22,6 +22,7 @@ function NavBar() {
                         <li><Link to="/about"   className={`transition-colors ${active === "/about" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>About</Link></li>
                         <li><Link to="/team"   className={`transition-colors ${active === "/team" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Team</Link></li>
                         <li><Link to="/tp"   className={`transition-colors ${active === "/tp" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Team2</Link></li>
+                        <li><Link to="/t1"   className={`transition-colors ${active === "/t1" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Team3</Link></li>
                         <li><Link to="/event"  className={`transition-colors ${active === "/event" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Events</Link></li>
                         <li><Link to="/blogs"  className={`transition-colors ${active === "/blogs" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Blogs</Link></li>
                     </ul>

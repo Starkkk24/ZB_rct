@@ -4,6 +4,7 @@ import tl from '../static/img/stark.jpg'
 import dl from '../static/img/dl.jpg'
 import sl from '../static/img/sl.jpg'
 import tr from '../static/img/tr.jpg'
+import MagicBento from "../components/GlobalSpotlight";
 
 // function TeamCard({img, post}){
 //     return(
@@ -196,6 +197,7 @@ const variants = {
   visible: { opacity: 1, scale: 1 },
   exit: { opacity: 0, scale: 1.1 }
 };
+
         
     return(
         <>

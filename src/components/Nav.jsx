@@ -46,36 +46,36 @@ function Footer() {
         {/* <footer class="flex flex-col bg-[rgba(13,17,23,0.95)] "> */}
         <div class="flex flex-row  justify-between px-34 py-8 ">
             <div className='footer_section' class="flex flex-col items-center">
-                    <h3 class="text-[#8fff00] text-2xl mb-5 font-semibold " style={{ textShadow: "0 0 10px rgba(0, 242, 255, 0.3)"}}>The Zigbee Club</h3>
-                    <p class="text-[rgba(255,255,255,0.4)] text-xl">Connecting and Creating Together</p>
+                    <h3 class="text-[#8fff00] text-xl mb-5 font-semibold " style={{ textShadow: "0 0 10px rgba(0, 242, 255, 0.3)"}}>The Zigbee Club</h3>
+                    <p class="text-[rgba(255,255,255,0.4)] ">Connecting and Creating Together</p>
                 </div>
             <div className='footer_section' class="flex flex-col items-center">
-                    <h4 class="mb-5 font-semibold text-2xl">Quick Links</h4>
+                    <h4 class="mb-5 font-semibold text-xl">Quick Links</h4>
                     <ul class="flex flex-col items-center" >
-                        <li><a href="#" class="text-[rgba(255,255,255,0.4)] text-xl">Home</a></li>
-                        <li><a href="#" class="text-[rgba(255,255,255,0.4)] text-xl">Blog</a></li>
-                        <li><a href="#" class="text-[rgba(255,255,255,0.4)] text-xl">Contact</a></li>
+                        <li><a href="#" class="text-[rgba(255,255,255,0.4)]">Home</a></li>
+                        <li><a href="#" class="text-[rgba(255,255,255,0.4)]">Blog</a></li>
+                        <li><a href="#" class="text-[rgba(255,255,255,0.4)]">Contact</a></li>
                     </ul>
             </div>
             <div className='footer_section' class="flex flex-col items-center">
-                    <h4 class="mb-5 font-semibold text-2xl">Legal</h4>
+                    <h4 class="mb-5 font-semibold text-xl">Legal</h4>
                     <ul class="flex flex-col items-center" >
-                        <li><a href="#" class="text-[rgba(255,255,255,0.4)] text-xl">Terms & Conditions</a></li>
-                        <li><a href="#" class="text-[rgba(255,255,255,0.4)] text-xl">Privacy Policy</a></li>
+                        <li><a href="#" class="text-[rgba(255,255,255,0.4)] ">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-[rgba(255,255,255,0.4)] ">Privacy Policy</a></li>
                     </ul>
             </div>
             <div className='footer_section' class="flex flex-col items-center">
-                    <h4 class="mb-5 font-semibold text-2xl">Connect With Us</h4>
+                    <h4 class="mb-3 font-semibold text-xl">Connect With Us</h4>
                     <div className="social-links" class="flex gap-7">
-                        <a class="text-3xl" href="https://www.linkedin.com/company/zigbee-club-fetju/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                        <a class="text-3xl" href="https://github.com/ZigbeeFETSC" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                        <a class="text-3xl" href="https://www.instagram.com/zigbee_ju" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                        <a class="text-3xl" href="https://chat.whatsapp.com/KaxOWNmnWx5C7niGCgd7s0" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a class="text-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:scale-110" href="https://www.linkedin.com/company/zigbee-club-fetju/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a class="text-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:scale-110" href="https://github.com/ZigbeeFETSC" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a class="text-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:scale-110" href="https://www.instagram.com/zigbee_ju" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a class="text-xl transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:scale-110" href="https://chat.whatsapp.com/KaxOWNmnWx5C7niGCgd7s0" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
                     </div>
             </div>
         </div>
         <div>
-            <p class="border-t border-t-[rgba(255,255,255,0.1)] py-4 text-[rgba(255,255,255,0.4)] text-center text-xl">&copy; 2025 The Zigbee Club. All rights reserved.</p>
+            <p class="border-t border-t-[rgba(255,255,255,0.1)] py-2 text-[rgba(255,255,255,0.4)] text-center">&copy; 2025 The Zigbee Club. All rights reserved.</p>
         </div>
         </footer>
         </>

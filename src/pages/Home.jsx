@@ -201,7 +201,7 @@ function HotCardsSlider() {
 export default function Home(){
     return(
         <>
-        <div class="relative  flex items-center justify-center  p-30 pt-0 mb-10 pb-0  z-20 m-10 mt-30">
+        <div class="relative  flex items-center justify-center  p-30 pt-0 mb-10 pb-0  z-20 m-10 mt-40">
             <div class="text-center relative m-0 z-2">
                 <h1 class="text-6xl mb-4 font-bold">Welcome to <span class="text-[#8fff00]">The Zigbee Club</span></h1>
                 <h3 class="text-3xl mb-8 font-semibold">The <span class="text-[#8fff00]">CSE-IoT</span> Club</h3>

@@ -156,9 +156,9 @@ function TeamCard5({img, name, post, cate, about}){
     {/* Bottom text + icons */}
     <div className="flex justify-between items-center absolute bottom-0 left-0 right-0 p-6 px-3 text-white">
       <div>
-        <h3 className="text-2xl font-bold mb-1">{name}</h3>
-        <p className="text-m opacity-90">
-          <span className="text-[#8fff00] font-semibold">{post}</span> {cate}
+        <h3 className="special-font text-2xl font-bold mb-1">{name}</h3>
+        <p className="text-m opacity-90 special-font ">
+          <span className=" text-[#8fff00] font-semibold">{post}</span> {cate}
         </p>                        
       </div>
 

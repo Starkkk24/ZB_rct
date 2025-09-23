@@ -35,3 +35,7 @@ html, body, #root {
   .github-icon:hover {
   filter: drop-shadow(0 0 6px #aaaaaa);
 }
+
+.normal-font {
+  font-family: sans-serif;
+}

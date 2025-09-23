@@ -8,9 +8,9 @@ function EventCard({date, location, name, img, about}){
         <div class="flex flex-col  p-0 mb-16 mx-50 mt-16 border  border-[rgba(255,255,255,0.1)] bg-[rgba(14,15,15,0.88)] backdrop-blur-md rounded-[12px]">
             <div class="flex justify-between gap-30 items-center border  border-[rgba(255,255,255,0.1)] bg-[rgba(0,0,0,0.66)] rounded-[12px] p-8 m-0">
                 <div class="flex flex-col gap-4">
-                    <p> <i class="fa-solid fa-calendar-week"></i> {date}</p>
-                    <h2 className="section-title" class="text-3xl  font-bold"><span class="text-[#8fff00]">{name}</span></h2>
-                    <p><i class="fa-solid fa-location-dot"></i> {location}</p>
+                    <p className='special-font '> <i class="fa-solid fa-calendar-week"></i> {date}</p>
+                    <h2 className="section-title " class="text-3xl special-font  font-bold"><span class="text-[#8fff00]">{name}</span></h2>
+                    <p className='special-font '><i class="fa-solid fa-location-dot "></i> {location}</p>
                     {/* <button>Hop In</button> */}
                     {/* <hr/> */}
                     {/* <p>{about}</p> */}
@@ -44,13 +44,13 @@ export default function Events() {
         <>
         <div className="container" class="  flex items-center justify-center text-4xl font-bold gap-4  px-40  pt-25 z-20 mb-12 mt-6">
             <i className="fas fa-calendar-alt text-[#8fff00]" ></i>
-            <h1 className="title" class=" text-white text-center relative">
+            <h1 className="special-font  title" class=" text-white text-center relative">
             Events
             </h1>
         </div>
 
         <div className="tabs" class="flex justify-center  gap-7  p-0 z-20">
-            <div className="tabs_button" class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px] border border-[#8fff00] p-4 text-[#8fff00] 
+            <div className="tabs_button" class="special-font  bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px] border border-[#8fff00] p-4 text-[#8fff00] 
              transition-all 
              duration-300 
              hover:bg-[#8fff00] 
@@ -58,7 +58,7 @@ export default function Events() {
              hover:scale-105 cursor-cell ">
                 Past Events
             </div>
-            <div className="tabs_button" class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px] border border-[#8fff00] p-4 text-[#8fff00] 
+            <div className="tabs_button" class="special-font  bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px] border border-[#8fff00] p-4 text-[#8fff00] 
              transition-all 
              duration-300 
              hover:bg-[#8fff00] 
@@ -66,7 +66,7 @@ export default function Events() {
              hover:scale-105 cursor-cell">
                 Current Events
             </div>
-            <div className="tabs_button" class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px] border border-[#8fff00] p-4 text-[#8fff00] 
+            <div className="tabs_button" class="special-font  bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px] border border-[#8fff00] p-4 text-[#8fff00] 
              transition-all 
              duration-300 
              hover:bg-[#8fff00] 
@@ -77,7 +77,7 @@ export default function Events() {
         </div>
         
         <div class="  flex items-center justify-center text-3xl gap-4  pt-12 z-20">
-            <h2 class="font-bold"><span class="text-[#8fff00] font-bold">Past</span> Events</h2>
+            <h2 class="font-bold special-font "><span class="text-[#8fff00] font-bold">Past</span> Events</h2>
         </div>
 
         <EventCard name="Project Expo" date="20 June 2025" location="Seminar Hall" img={pic} about="An exciting exhibition where students demonstrate their technical innovations, creative solutions, and cutting-edge prototypes. A platform to inspire collaboration and celebrate ingenuity."  />

@@ -16,7 +16,7 @@ This “Crazy Hub” will not only serve as a platform for experimentation, lear
         <div class="  flex items-center justify-center  px-40 py-15 z-20  mt-0">
             <div class="text-center  m-0 z-2 border  border-[rgba(255,255,255,0.1)] p-8 bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px]">
                 <h2 className="section-title" class="text-4xl mb-16 font-bold"><span class="text-[#8fff00]">Our</span> History</h2>
-                <p class=" my-14">The IoT Club was founded with a shared vision: to bring together curious minds passionate about the Internet of Things, smart systems, and the future of connected technologies. What started as a small group of students experimenting with sensors, microcontrollers, and creative projects has grown into a vibrant community of innovators, coders, and problem-solvers. <br/><br/>
+                <p className="normal-font my-14">The IoT Club was founded with a shared vision: to bring together curious minds passionate about the Internet of Things, smart systems, and the future of connected technologies. What started as a small group of students experimenting with sensors, microcontrollers, and creative projects has grown into a vibrant community of innovators, coders, and problem-solvers. <br/><br/>
 
 In the early days, our members gathered informally to explore new ideas, share knowledge, and collaborate on mini-projects. Over time, this enthusiasm transformed into structured workshops, hands-on sessions, and real-world applications that showcased the true potential of IoT.<br/><br/>
 

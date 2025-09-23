@@ -18,20 +18,20 @@ function NavBar() {
             <div className="nav-middle" class="flex flex-row items-center gap-8 bg-[rgba(33,36,39,0.7)]   backdrop-blur-md border-0 rounded-3xl px-6 py-0 m-4">
                 <div className="nav-links" >
                     <ul class="flex flex-row gap-12 px-4 justify-center text-sm">
-                        <li><Link  to="/"  className={`transition-colors ${active === "/" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Home</Link></li>
-                        <li><Link  to="/about"   className={`transition-colors ${active === "/about" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>About</Link></li>
-                        <li><Link  to="/team"   className={`transition-colors ${active === "/team" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Team</Link></li>
-                        <li><Link  to="/tp"   className={`transition-colors ${active === "/tp" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Team2</Link></li>
-                        <li><Link  to="/t1"   className={`transition-colors ${active === "/t1" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Team3</Link></li>
-                        <li><Link  to="/event"  className={`transition-colors ${active === "/event" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Events</Link></li>
-                        <li><Link  to="/blogs"  className={`transition-colors ${active === "/blogs" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Blogs</Link></li>
+                        <li className="special-font "><Link  to="/"  className={`transition-colors ${active === "/" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Home</Link></li>
+                        <li className="special-font "><Link  to="/about"   className={`transition-colors ${active === "/about" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>About</Link></li>
+                        <li className="special-font "><Link  to="/team"   className={`transition-colors ${active === "/team" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Team</Link></li>
+                        <li className="special-font "><Link  to="/tp"   className={`transition-colors ${active === "/tp" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Team2</Link></li>
+                        <li className="special-font "><Link  to="/t1"   className={`transition-colors ${active === "/t1" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Team3</Link></li>
+                        <li className="special-font "><Link  to="/event"  className={`transition-colors ${active === "/event" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Events</Link></li>
+                        <li className="special-font "><Link  to="/blogs"  className={`transition-colors ${active === "/blogs" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Blogs</Link></li>
                     </ul>
                 </div>
             </div>
         {/* </div> */}
         <div className='nav-right' class="flex flex-row items-center gap-8 bg-[rgba(33,36,39,0.7)]  backdrop-blur-md border-0 rounded-3xl px-6 py-4 m-4">
                 <ul class="flex flex-row gap-12 px-4 justify-center text-sm">
-                    <li><Link to="/contact"  className={`transition-colors ${active === "/contact" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Contact</Link></li>
+                    <li className='special-font '><Link to="/contact"  className={`transition-colors ${active === "/contact" ? "text-[#8fff00] font-bold" : "text-[rgba(255,255,255,0.8)]"}`}>Contact</Link></li>
                 </ul>
         </div>
         </nav>
@@ -44,7 +44,7 @@ function Footer() {
         <>
         <footer class="flex flex-col bg-[#000000dc] border-t border-t-[rgba(255,255,255,0.1)]">
         {/* <footer class="flex flex-col bg-[rgba(13,17,23,0.95)] "> */}
-        <div class="flex flex-row  justify-between px-34 py-8 ">
+        <div class="flex flex-row  justify-between px-25 py-8 ">
             <div className='footer_section' class="flex flex-col items-center">
                     <h3 class="text-[#8fff00] text-xl mb-5 font-semibold " style={{ textShadow: "0 0 10px rgba(0, 242, 255, 0.3)"}}>The Zigbee Club</h3>
                     <p class="text-[rgba(255,255,255,0.4)] ">Connecting and Creating Together</p>

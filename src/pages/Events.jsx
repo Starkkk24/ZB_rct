@@ -5,11 +5,11 @@ import {Link} from 'react-router-dom'
 function EventCard({date, location, name, img, about}){
     return(
         <>
-        <div class="flex flex-col  p-0 mb-16 mx-78 mt-16 border  border-[rgba(255,255,255,0.1)] bg-[rgba(14,15,15,0.88)] backdrop-blur-md rounded-[12px]">
+        <div class="flex flex-col  p-0 mb-16 mx-50 mt-16 border  border-[rgba(255,255,255,0.1)] bg-[rgba(14,15,15,0.88)] backdrop-blur-md rounded-[12px]">
             <div class="flex justify-between gap-30 items-center border  border-[rgba(255,255,255,0.1)] bg-[rgba(0,0,0,0.66)] rounded-[12px] p-8 m-0">
-                <div class="flex flex-col gap-5">
+                <div class="flex flex-col gap-4">
                     <p> <i class="fa-solid fa-calendar-week"></i> {date}</p>
-                    <h2 className="section-title" class="text-4xl  font-bold"><span class="text-[#8fff00]">{name}</span></h2>
+                    <h2 className="section-title" class="text-3xl  font-bold"><span class="text-[#8fff00]">{name}</span></h2>
                     <p><i class="fa-solid fa-location-dot"></i> {location}</p>
                     {/* <button>Hop In</button> */}
                     {/* <hr/> */}
@@ -17,19 +17,19 @@ function EventCard({date, location, name, img, about}){
                     {/* <hr/> */}
                     </div>
                 <div>
-                    <img src={img} alt="img"  class="border border-[rgba(255,255,255,0.1)] w-[500px] h-[200px] rounded-[12px]"/>
+                    <img src={img} alt="img"  class="border border-[rgba(255,255,255,0.1)] w-[400px] h-[200px] rounded-[12px]"/>
                 </div>                        
             </div>
             <div class="flex
                         justify-between
                         gap-64
                         items-center
-                        p-8 
+                        p-4 
                         ">
-                <div class="text-xl">
+                <div >
                    Share  <i class="fa-solid fa-arrow-up-from-bracket"></i>
                 </div>                
-                <div class="text-xl">
+                <div >
                     <Link to="/event1">View <i class="fa-solid fa-arrow-up-right-from-square"></i></Link>
                 </div>                
             </div>
@@ -42,14 +42,14 @@ function EventCard({date, location, name, img, about}){
 export default function Events() {
     return(
         <>
-        <div className="container" class="  flex items-center justify-center text-6xl font-bold gap-4  px-40  pt-25 z-20 mb-12 mt-6">
+        <div className="container" class="  flex items-center justify-center text-4xl font-bold gap-4  px-40  pt-25 z-20 mb-12 mt-6">
             <i className="fas fa-calendar-alt text-[#8fff00]" ></i>
             <h1 className="title" class=" text-white text-center relative">
             Events
             </h1>
         </div>
 
-        <div className="tabs" class="flex justify-center text-2xl gap-7  p-0 z-20">
+        <div className="tabs" class="flex justify-center  gap-7  p-0 z-20">
             <div className="tabs_button" class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md rounded-[12px] border border-[#8fff00] p-4 text-[#8fff00] 
              transition-all 
              duration-300 
@@ -76,7 +76,7 @@ export default function Events() {
             </div>
         </div>
         
-        <div class="  flex items-center justify-center text-5xl gap-4  pt-20 z-20">
+        <div class="  flex items-center justify-center text-3xl gap-4  pt-12 z-20">
             <h2 class="font-bold"><span class="text-[#8fff00] font-bold">Past</span> Events</h2>
         </div>
 

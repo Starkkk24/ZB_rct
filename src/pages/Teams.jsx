@@ -141,8 +141,8 @@ function TeamCard6({img, name, post, cate, about}){
 function TeamCard5({img, name, post, cate, about}){
     return(
         <>
-<div className="mb-16 w-[28rem] rounded-[12px]">
-  <div className="group relative bg-blue w-[24rem] h-[30rem] border border-[rgba(255,255,255,0.1)] rounded-[12px] overflow-hidden">
+<div className="mb-4  rounded-[12px]">
+  <div className="group relative bg-blue w-[20rem] h-[24rem] border border-[rgba(255,255,255,0.1)] rounded-[12px] overflow-hidden">
 
     {/* Image */}
     <img 
@@ -188,22 +188,22 @@ function TeamCard5({img, name, post, cate, about}){
 export default function Teams(){
     return(
         <>
-        <div class="  flex items-center justify-center  px-40 pb-15 pt-25 z-20">
+        <div class="  flex items-center justify-center  px-40 pb-8 pt-25 z-20">
             <div class="text-center  m-0 z-2 p-8">
-                <h2 className="section-title" class="text-5xl mb-6 font-bold"><span class="text-[#8fff00]">Our</span> Team</h2> 
-                <p class=" text-xl mb-0">Peope with ambitions. Who fill the current in the IoT Circuits.</p>
+                <h2 className="section-title" class="text-4xl mb-6 font-bold"><span class="text-[#8fff00]">Our</span> Team</h2> 
+                <p class="  mb-0">Peope with ambitions. Who fill the current in the IoT Circuits.</p>
             </div>
         </div>
 
         {/* <div class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md m-25 mt-0" > */}
         <div className="Wrap">
-            <div class="flex items-center flex-col mx-25">
-                <div class="flex gap-2 text-[#8ff000] font-bold text-3xl mb-10 ">
+            <div class="flex items-center flex-col mx-10">
+                <div class="flex gap-2 text-[#8ff000] font-bold text-2xl mb-10 ">
                     <i class="fas fa-users-cog"></i>
                     <h3>Leads</h3>                    
                 </div>
 
-                <div class="grid grid-cols-4 gap-4 mb-16">
+                <div class="grid grid-cols-4 gap-8 mb-16">
                     <TeamCard5   name="Kiran" post="Lead"/>
                     <TeamCard5   name="Lakshmi" post="Lead"/>
                     <TeamCard5 img={tr} name="Saswath" post="Treasurer"/>
@@ -221,7 +221,7 @@ export default function Teams(){
             </div>
 
             <div class="flex items-center flex-col mx-25">
-                <div class="flex gap-2 text-[#8ff000] font-bold text-3xl mb-10 ">
+                <div class="flex gap-2 text-[#8ff000] font-bold text-2xl mb-10 ">
                     <i class="fas fa-users-cog"></i>
                     <h3>Core Members</h3>                    
                 </div>

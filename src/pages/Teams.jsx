@@ -1,7 +1,17 @@
-import tl from '../static/img/stark.jpg'
+import tl from '../static/img/tl.jpeg'
 import dl from '../static/img/dl.jpg'
 import sl from '../static/img/sl.jpg'
 import tr from '../static/img/tr.jpg'
+import kiran from '../static/img/kiran.png'
+import shyam from '../static/img/shyam.png'
+import chaitanya from '../static/img/chaitanya.png'
+import varshitha from '../static/img/varshitha.png'
+import lakshmi from '../static/img/lakshmi.png'
+import tejaswini from '../static/img/tejaswini.png'
+import user from '../static/img/user.png'
+import harsh from '../static/img/harsh.jpg'
+import sanskriti from '../static/img/sanskriti.jpg'
+import devraj from '../static/img/devraj.jpg'
 
 function TeamCard({img, post}){
     return(
@@ -188,9 +198,9 @@ function TeamCard5({img, name, post, cate, about}){
 export default function Teams(){
     return(
         <>
-        <div class="  flex items-center justify-center  px-40 pb-8 pt-25 z-20">
-            <div class="text-center  m-0 z-2 p-8">
-                <h2 className="section-title" class="text-4xl mb-6 font-bold"><span class="text-[#8fff00]">Our</span> Team</h2> 
+        <div class="  flex items-center justify-center  px-40 pb-5 pt-25 z-20">
+            <div class="text-center  m-0 z-2 p-7">
+                <h2 className="special-font text-5xl mb-6 font-semibold"><span class="text-[#8fff00]">Our</span> Team</h2> 
                 <p class="  mb-0">Peope with ambitions. Who fill the current in the IoT Circuits.</p>
             </div>
         </div>
@@ -198,41 +208,41 @@ export default function Teams(){
         {/* <div class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md m-25 mt-0" > */}
         <div className="Wrap">
             <div class="flex items-center flex-col mx-10">
-                <div class="flex gap-2 text-[#8ff000] font-bold text-2xl mb-10 ">
+                <div class="flex gap-2 text-[#8ff000] special-font text-4xl font-semibold mb-10 ">
                     <i class="fas fa-users-cog"></i>
                     <h3>Leads</h3>                    
                 </div>
 
                 <div class="grid grid-cols-4 gap-8 mb-16">
-                    <TeamCard5   name="Kiran" post="Lead"/>
-                    <TeamCard5   name="Lakshmi" post="Lead"/>
-                    <TeamCard5 img={tr} name="Saswath" post="Treasurer"/>
+                    <TeamCard5 img = {kiran}  name="Kiran" post="Lead"/>
+                    <TeamCard5 img = {lakshmi}  name="Lakshmi" post="Lead"/>
+                    <TeamCard5 img = {sanskriti} name="Sanskriti" post="Secretary"/>
+                    <TeamCard5 img = {shyam} name="Shyam" post="Vice Secretary"/>
                     <TeamCard5 img={tl} cate="Lead" name="Mayank" post="Tech"/>
-                    <TeamCard5  cate="Lead" name="Varshita" post="Tech"/>
+                    <TeamCard5 img = {varshitha} cate="Lead" name="Varshita" post="Tech"/>
                     <TeamCard5 img={sl} cate="Lead" name="Stuti" post="Social Media"/>
-                    <TeamCard5  cate="Lead" name="Devraj" post="Social Media"/>
+                    <TeamCard5 img = {devraj}  cate="Lead" name="Devraj" post="Social Media"/>
                     <TeamCard5 img={dl} cate="Lead" name="Shivom" post="Design"/>
-                    <TeamCard5  cate="Lead" name="Chaithany" post="Design"/>
-                    <TeamCard5  cate="Lead" name="Sanskriti" post="Secretary"/>
-                    <TeamCard5  cate="Lead" name="Shyam" post="Vice Secretary"/>
-                    <TeamCard5  cate="Lead" name="Harsh" post="Out Reach"/>
-                    <TeamCard5  cate="Lead" name="Tejaswini" post="Out Reach"/>
+                    <TeamCard5 img = {chaitanya} cate="Lead" name="Chaithanya" post="Design"/>
+                    <TeamCard5 img = {harsh} cate="Lead" name="Harsh" post="Out Reach"/>
+                    <TeamCard5 img = {tejaswini} cate="Lead" name="Tejaswini" post="Out Reach"/>
+                    <TeamCard5 img={tr} name="Saswath" post="Treasurer"/>
                 </div>
             </div>
 
-            <div class="flex items-center flex-col mx-25">
+            {/* <div class="flex items-center flex-col mx-25">
                 <div class="flex gap-2 text-[#8ff000] font-bold text-2xl mb-10 ">
                     <i class="fas fa-users-cog"></i>
                     <h3>Core Members</h3>                    
                 </div>
 
                 <div class="grid grid-cols-3 gap-4 mb-16">
-                    {/* <TeamCard5 />
                     <TeamCard5 />
                     <TeamCard5 />
-                    <TeamCard5 /> */}
+                    <TeamCard5 />
+                    <TeamCard5 />
                 </div>
-            </div>
+            </div> */}
 
         </div>
         {/* </div> */}

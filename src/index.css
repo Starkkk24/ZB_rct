@@ -48,6 +48,10 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  color: #8fff00 !important;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

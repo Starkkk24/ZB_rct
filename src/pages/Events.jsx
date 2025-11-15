@@ -42,9 +42,9 @@ function EventCard({date, location, name, img, about}){
 export default function Events() {
     return(
         <>
-        <div className="container" class="  flex items-center justify-center text-4xl font-bold gap-4  px-40  pt-25 z-20 mb-12 mt-6">
+        <div className="container" class="  flex items-center justify-center special-font text-5xl font-semibold gap-4  px-40  pt-25 z-20 mb-12 mt-6">
             <i className="fas fa-calendar-alt text-[#8fff00]" ></i>
-            <h1 className="special-font  title" class=" text-white text-center relative">
+            <h1 className="special-font text-5xl font-semibold" class=" text-white text-center relative">
             Events
             </h1>
         </div>
@@ -75,6 +75,7 @@ export default function Events() {
                 Upcoming Events
             </div>
         </div>
+
         
         <div class="  flex items-center justify-center text-3xl gap-4  pt-12 z-20">
             <h2 class="font-bold special-font "><span class="text-[#8fff00] font-bold">Past</span> Events</h2>

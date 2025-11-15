@@ -1,11 +1,88 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Navigation } from "swiper/modules";
 import {Link} from 'react-router-dom'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Navigation, Keyboard } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/navigation';
 
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "swiper/css/navigation";
+function HotCard({ fas, title, para }) {
+  return (
+    <div className="bg-[rgba(13,17,23,0.3)] backdrop-blur-md border border-[rgba(255,255,255,0.1)] rounded-[12px] p-4 transition-transform duration-300 ease-in-out">
+      <div className="text-2xl mb-6 text-[#8fff00]">
+        <i className="fa-solid fa-bell"></i>
+      </div>
+      <h3 className="special-font text-[#8fff00] mb-4 text-2xl font-bold">{title}</h3>
+      <p className="text-[rgba(255,255,255,0.7)] leading-[1.6]">{para}</p>
+      <button>
+        Go On!
+      </button>
+    </div>
+  );
+}
 
+function HotCardsSlider() {
+  return (
+    <Swiper
+      effect="coverflow"
+      grabCursor={true}
+      centeredSlides={true}
+      slidesPerView={3}
+      spaceBetween={0}
+      slideToClickedSlide={true}
+      keyboard={{
+        enabled: true,
+      }}
+      coverflowEffect={{
+        rotate: 20,
+        stretch: 0,
+        depth: 200,
+        modifier: 1.5,
+        slideShadows: true,
+        scale: 0.85,
+      }}
+      navigation={true}
+      modules={[EffectCoverflow, Navigation, Keyboard]}
+      className="w-[90rem] h-[22rem]"
+    >
+      <SwiperSlide>
+        <HotCard
+          title="Club Interaction"
+          para={
+            <>
+              We have an Interaction session with all the first years.<br />
+              On 23rd Sept at 08:45 in Room no- 322-A FET.
+            </>
+          }
+        />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <HotCard
+          title="Zigbee New Members Announced!"
+          para={
+            <>
+              The Results of the selected Core Members of Zigbee Club 2025-2026
+              have been announced.<br />
+              Please Check it out! 👉
+            </>
+          }
+        />
+      </SwiperSlide>
+
+      <SwiperSlide>
+        <HotCard
+          title="Event Update"
+          para={
+            <>
+              A crazy is coming! on the first week of Octoebr.<br />
+              Stay tuned 🚀
+            </>
+          }
+        />
+      </SwiperSlide>
+    </Swiper>
+  );
+}
 
 
 function FeatureCard({fas, title, para}){
@@ -22,44 +99,6 @@ function FeatureCard({fas, title, para}){
         </>
     )
 }
-function HotCard({fas, title, para}){
-    return(
-        <>
-        <div className="Feature_card" class="bg-[rgba(13,17,23,0.3)] backdrop-blur-md border border-[rgba(255,255,255,0.1)] rounded-[12px] p-4 transition-transform duration-300 ease-in-out">
-            <div className="feature-icon" class="text-2xl mb-6 text-[#8fff00]">
-                <i class="fa-solid fa-bell"></i>
-            </div>
-            <h3 class="special-font  text-[#8fff00] mb-4 text-2xl font-bold">{title}</h3>
-            <p class="text-[rgba(255,255,255,0.7)] leading-[1.6]">{para}</p>
-            <button>
-                Go On!
-            </button>
-        </div>
-        </>
-    )
-}
-
-// function HotCardsSlider() {
-//   return (
-//     <Swiper
-//       effect={"coverflow"}
-//       grabCursor={true}
-//       centeredSlides={true}
-//       slidesPerView={3} // middle + half of left & right
-//       spaceBetween={-60} // overlap a little
-//       coverflowEffect={{
-//         rotate: 0, // keep them flat, not rotated
-//         stretch: 0,
-//         depth: 200, // depth for inward cube-like feel
-//         modifier: 2, // exaggerate effect
-//         slideShadows: true,
-//       }}
-//       navigation={true}
-//       modules={[EffectCoverflow, Navigation]}
-//       className="w-[60rem] h-[30rem]"
-//     ></Swiper>
-//   )
-// }
 
 function TechStats({sn, sl}){
     return(
@@ -71,132 +110,9 @@ function TechStats({sn, sl}){
         </>
     )
 }
-// function HotCardsSlider() {
-//   return (
-// <Swiper
-//   effect={"coverflow"}
-//   grabCursor={true}
-//   centeredSlides={true}
-//   slidesPerView={3}          // middle + left + right partially visible
-//   spaceBetween={-60}         // overlap
-//   slideToClickedSlide={true} // click side cards to center
-//   watchSlidesProgress={true} // required for click-to-center
-//   coverflowEffect={{
-//     rotate: 20,      // rotate side slides slightly
-//     stretch: 0,
-//     depth: 200,      // inward depth for 3D feel
-//     modifier: 1.5,   // exaggerate effect
-//     slideShadows: true,
-//     scale: 0.85,     // side slides slightly smaller
-//   }}
-//   modules={[EffectCoverflow]}
-//   className="w-[60rem] h-[30rem]"
-// >
-//   <SwiperSlide>
-//     <HotCard
-//       title="Zigbee New Members Announced !"
-//       para={
-//         <>
-//           The Results of the selected Core Members of Zigbee Club 2025-2026
-//           have been announced.<br />
-//           Please Check it out! 👉
-//         </>
-//       }
-//     />
-//   </SwiperSlide>
-
-//   <SwiperSlide>
-//     <HotCard
-//       title="Another Announcement"
-//       para={
-//         <>
-//           Something interesting is coming!<br />
-//           Stay tuned 🚀
-//         </>
-//       }
-//     />
-//   </SwiperSlide>
-
-//   <SwiperSlide>
-//     <HotCard
-//       title="Last Update"
-//       para={
-//         <>
-//           This is the final update.<br />
-//           Thank you 🙌
-//         </>
-//       }
-//     />
-//   </SwiperSlide>
-// </Swiper>
 
 
-//   );
-// }
-function HotCardsSlider() {
-  return (
-    <Swiper
-      effect={"coverflow"}
-      grabCursor={true}
-      centeredSlides={true}
-      slidesPerView={3}            
-      spaceBetween={0}              // remove extra gap so clicks are detected
-      slideToClickedSlide={true}    // allow clicking side slides to center
-      watchSlidesProgress={true}    // required for proper detection
-      loop={true}                   // loop helps with click-to-center
-      coverflowEffect={{
-        rotate: 20,
-        stretch: 0,
-        depth: 200,
-        modifier: 1.5,
-        slideShadows: true,
-        scale: 0.85,
-      }}
-      modules={[EffectCoverflow]}
-      className="w-[90rem] h-[22rem]"
-    >
 
-
-      <SwiperSlide>
-        <HotCard
-          title="Club Interaction"
-          para={
-            <>
-              We have an Interaction session with all the first years.<br />
-              On 23rd Sept at 08:45 in Room no- 322-A FET.
-            </>
-          }
-        />
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <HotCard
-          title="Zigbee New Members Announced !"
-          para={
-            <>
-              The Results of the selected Core Members of Zigbee Club 2025-2026
-              have been announced.<br />
-              Please Check it out! 👉
-            </>
-          }
-        />
-      </SwiperSlide> 
-
-      <SwiperSlide>
-        <HotCard
-          title="Event Update"
-          para={
-            <>
-              A crazy is coming! on the first week of Octoebr.<br />
-              Stay tuned 🚀
-            </>
-          }
-        />
-      </SwiperSlide>
-
-    </Swiper>
-  );
-}
 
 export default function Home(){
     return(
@@ -296,8 +212,8 @@ export default function Home(){
             <h2 className="section-title" class="special-font text-4xl mb-4 font-bold">Our <span class="text-[#8fff00]">Vision</span></h2>
             <div className="tech-stats" class="bg-[rgba(13,17,23,0.3)] rounded-lg p-6 grid grid-cols-3 gap-16 mt-8">
                 <TechStats sn="Collaborative" sl="Events" />
-                <TechStats sn="Open" sl="Forum" />
-                <TechStats sn="Weekly" sl="Challenges" />
+                <TechStats sn="Boost" sl="Interaction" />
+                <TechStats sn="Crazy" sl="Challenges" />
             </div>
         </div>
         </div>
